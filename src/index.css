@@ -1,0 +1,83 @@
+body{
+  background-color: rgb(76, 76, 76);
+}
+h1{
+  text-align: center;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+.containerInput{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 50px;
+}
+.inputTask{
+  border-style: none;
+  width: 50%;
+  padding: 10px;
+  border: 1px outset rgb(76, 76, 76) ;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.inputTask:focus{
+  background-color: black;
+  color: aliceblue;
+  border: 1px inset rgb(76, 76, 76);
+  transition-duration:0.5s ;
+}
+.buttonTask{
+  border-radius: 10px;
+  border: 1px outset rgb(76, 76, 76);
+  background-color: aliceblue;
+  width: 10%;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.buttonTask:hover{
+  background-color: black;
+  color: aliceblue;
+  border: 1px inset rgb(76, 76, 76);
+  transform: scale(0.99);
+  transition-duration: 0.5s;
+}
+.containerTask{
+  background-color: aliceblue;
+  padding: 20px;
+  display: flex;
+  width: 50%;
+  margin: 10px auto;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.containerTask > span{
+font-size: 1.2em;
+text-transform: uppercase;
+}
+
+.containerTask > button{
+  background-color: rgb(201, 89, 89);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px outset black;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.containerTask > button:active{
+  border: 2px inset black;
+}
+.containerTask > button:hover{
+  transform: scale(0.9);
+  transition-duration: 0.5s;
+  background-color: red;
+}
+.containerTask:hover{
+  transition-duration:0.5s ;
+  background-color: black;
+  color: aliceblue;
+}
+.containerList{
+  margin: 30px auto;
+}
